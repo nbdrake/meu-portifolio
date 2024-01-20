@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+    --main-color: #000000;
+    --second-color: #F6F6F6;
+    --third-color: #700B97;
+    --hover-color: #272727;
+    --whatsapp-color: #25D366;
+
+    --main-font: 'Krona One', sans-serif;
+    --second-font: 'Montserrat', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--main-color);
+    color: var(--second-color);
+}
+
+.heading {
+    padding: 2% 0% 0% 15%;
+}
+
+.heading__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.heading__menu__link {
+    font-family: var(--second-font);
+    font-size: 24px;
+    font-family: 600;
+    color: var(--third-color);
+    text-decoration: none;
+}
+
+.title-highlight {
+    color: var(--third-color);
+}
+
+.container{
+    margin: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container__content{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 615px;
+    /* height: 482px; */
+}
+
+.container__content__title{
+    font-size: 36px;
+    font-family: var(--main-font);
+}
+
+.container__content__text{
+    font-size: 24px;
+    font-family: var(--second-font);
+}
+
+.container__links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.container__content__subtitle{
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.container__links__link{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 280px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 24px;
+    padding: 21.5px 0px;
+    text-decoration: none;
+    color:var(--second-color);
+    font-family: var(--second-font);
+    font-weight: 600;
+    border: 2px solid var(--third-color);
+}
+
+.container__links__whatsapp {
+    width: 280px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-size: 24px;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--second-color);
+    font-family: var(--second-font);
+    font-weight: 600;
+    border: 2px solid var(--whatsapp-color);
+    display: inline-block;
+}
+
+.container__links__link:hover {
+    background-color: var(--hover-color);
+    color: var(--second-color);
+}
+
+.container__links__whatsapp:hover {
+    background-color: var(--hover-color);
+    color: var(--second-color);
+}
+
+.baseboard {
+    padding: 24px;
+    color:var(--main-color);
+    background-color: var(--third-color);
+    text-align: center;
+    font-family: var(--second-font);
+    font-size: 24px;
+    font-weight: 400;
+}
